@@ -1,5 +1,4 @@
 .naveBar{
-    min-height:15vh;
-    max-height:15vh;
+    height:100%; 
     background-color:lightblue;
 }

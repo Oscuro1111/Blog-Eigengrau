@@ -1,11 +1,13 @@
-import React,{PropType} from 'react';
+import React from 'react';
 
 import './styles/naveBar.css';
 
-const NavBar =({children})=>(
-    <React.Fragment>
-       <div className="naveBar">
-         
-       </div>
-    </React.Fragment>
-); 
+const NavBar = () => {
+	return (
+		<React.Fragment>
+			<div className="naveBar">naveBar Component</div>
+		</React.Fragment>
+	);
+};
+
+export default NavBar;

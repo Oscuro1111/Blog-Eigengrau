@@ -1,13 +1,27 @@
 import React from 'react';
-import  './styles/root.css';
+import './styles/root.css';
 
-export default class Root extends React.Component{
-    render(){
+import Content from '../Contents';
+import NavBar from '../Navebar';
+import SideBarComponent from '../sideBar';
 
-        return (<React.Fragment>
-          <div className="rootContainer">
-            <div className="post">rootContainer</div>
+export default class Root extends React.Component {
+	render() {
+		return (
+			<React.Fragment>
+				<div className="rootContainer">
+					<div className="Heading">
+						<NavBar />
+					</div>
+					<div className="Content">
+						<Content />
+					</div>
+					<div className="sideBar">
+            <SideBarComponent />
           </div>
-        </React.Fragment>);
-    }
-} 
+					<div className="footer">footer</div>
+				</div>
+			</React.Fragment>
+		);
+	}
+}

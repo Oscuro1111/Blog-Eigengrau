@@ -1,0 +1,7 @@
+
+.containerComponent {
+    overflow-y: scroll;
+    height: 100%;
+    -webkit-overflow-scrolling: auto;
+    background-color: rgb(130, 69, 180);
+}
