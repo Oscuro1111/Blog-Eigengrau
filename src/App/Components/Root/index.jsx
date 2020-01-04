@@ -4,6 +4,7 @@ import './styles/root.css';
 import Content from '../Contents';
 import NavBar from '../Navebar';
 import SideBarComponent from '../sideBar';
+import { Footer } from '../footer';
 
 export default class Root extends React.Component {
 	render() {
@@ -19,7 +20,9 @@ export default class Root extends React.Component {
 					<div className="sideBar">
             <SideBarComponent />
           </div>
-					<div className="footer">footer</div>
+					<div className="footer">
+            <Footer />
+          </div>
 				</div>
 			</React.Fragment>
 		);
