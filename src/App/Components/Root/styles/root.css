@@ -7,11 +7,14 @@
 
 .Heading{
     grid-column:1/5; 
+    grid-row: 1/2;
+    max-height:60pt;
     background-color:red; 
 }
 .Content{
     grid-column: 1/4;
-    
+    grid-row: 2/5;
+    min-height: 86vh;
     background-color:lightcoral;
 }
 
