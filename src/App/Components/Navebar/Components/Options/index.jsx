@@ -7,9 +7,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 const NavOptions=()=>{
   return (
     <div className="naveOptions">
+     <span className="opt_span colorBtn">Create Post</span>
      <span className="opt_span btn-primary">Home</span>
      <span className="opt_span btn-primary">Account</span>
-      <img src={userpic} className="userPhoto"  alt="userPhoto" />
+      <img src={userpic} className="userPhoto"  alt="userPhoto"/>
     </div>
   );
 };

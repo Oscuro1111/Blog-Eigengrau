@@ -22,3 +22,30 @@
     height:10px;
     align-self: flex-start;
 }
+
+@media screen and (max-width: 956px){
+    .logoName{
+        font-size: 25pt;
+        padding-left:20px;
+        color:rgb(9, 90, 59);
+    }
+    .logo{
+        margin-top: 100px;
+        align-self: flex-start;
+    }
+    .discription{
+        display: none;
+        margin-top:10px;
+        color: rgb(6, 54, 109);
+        text-shadow: 3px 3px 3px black;
+    }
+}
+
+@media screen and (max-width: 609px){
+    .logoName{
+        font-size: 20pt;
+        padding-left:20px;
+        color:rgb(9, 90, 59);
+    }
+
+}

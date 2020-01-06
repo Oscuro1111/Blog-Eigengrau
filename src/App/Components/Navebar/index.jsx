@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './styles/naveBar.css';
+import './styles/naveBar.css'; 
 
 import {LogoBox} from './Components/LogoBox';
 import {Options} from './Components/Options';

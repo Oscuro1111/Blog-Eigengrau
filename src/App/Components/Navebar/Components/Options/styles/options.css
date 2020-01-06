@@ -6,7 +6,13 @@
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
-    word-spacing: 30px;
+}
+[class~="colorBtn"]{
+    background-color:rgb(27, 201, 85);
+    color:white;
+}
+[class~="colorBtn"]:hover{
+    background-color:rgb(13, 155, 60);
 }
 .opt_span{
     font-size:14pt;
