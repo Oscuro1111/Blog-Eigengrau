@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "cross-fetch": "^3.0.4",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0",
     "raven-js": "^3.27.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",

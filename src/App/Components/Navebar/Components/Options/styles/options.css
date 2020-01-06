@@ -1,6 +1,42 @@
 .options{
+    background-color:white ;
     grid-column:2/5;
     height: 100%;
+    align-content: center;
     width: 100%;
-    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    word-spacing: 30px;
+}
+.opt_span{
+    font-size:14pt;
+    padding:8px;
+    margin:10px;
+}
+.opt_span:hover{
+    cursor: pointer;
+}
+.naveOptions{
+    justify-content: space-between;
+
+}
+.home_{
+    padding:20px;
+    font-size:14pt;
+}
+.account_{
+    
+    font-size:14pt;
+
+}
+.home_ ,.account_{
+    color:rgb(34, 136, 139);
+    padding:3px;
+
+}
+.userPhoto{
+    height:52pt;
+    width:53pt;
+    padding:2px;
+    align-self: flex-end;
 }
