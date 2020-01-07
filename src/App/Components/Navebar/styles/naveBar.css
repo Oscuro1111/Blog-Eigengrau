@@ -1,5 +1,5 @@
 .naveBar{
-    position: sticky;
+    position: relative;
     background-position-x: 2px ;
     background-position-y: 2px;
     display:grid;

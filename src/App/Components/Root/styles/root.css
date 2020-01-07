@@ -1,4 +1,5 @@
 .rootContainer{
+    position:relative;
     display: grid;
     min-height: 100vh;
     text-align: center;
@@ -39,4 +40,17 @@
 }
 .sideBar ,.Content, .userAccount{
     grid-row:2/8;
+}
+
+@media screen and (max-width:666px){
+    .sideBar{
+        display: none;
+        width:0%;
+        grid-column:5/5 ;
+    }
+
+    .Content{
+        width: 100%;
+        grid-column: 1/5;
+    }
 }

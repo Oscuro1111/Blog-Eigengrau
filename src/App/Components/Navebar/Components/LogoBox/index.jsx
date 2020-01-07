@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './styles/logo.css';
 import Logo from './code.svg';
 import LogoMobile from './styles/code.svg';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const LogoComponent = ({ logo }) => {
 	return (
@@ -16,7 +18,7 @@ const LogoComponent = ({ logo }) => {
 export const LogoBox = (logoComponent => {
 	var initialLogo = window.innerWidth > 609 ? Logo : LogoMobile;
 
-	var matchMediaHandler = window.matchMedia('(max-width:609px)');
+	var matchMediaHandler = window.matchMedia('(max-width:660px)');
 
 	var applyLogo = stateChanger => match => {
 		if (match.matches) {

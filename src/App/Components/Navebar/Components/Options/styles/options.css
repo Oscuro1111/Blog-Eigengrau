@@ -1,11 +1,19 @@
 .options{
     background-color:white ;
     grid-column:2/5;
+    
     height: 100%;
     align-content: center;
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
+}
+
+.optionsList{
+    grid-column:2/5;
+    background-color: white;
+    flex-direction: row-reverse;
+
 }
 [class~="colorBtn"]{
     background-color:rgb(27, 201, 85);
@@ -26,6 +34,8 @@
     justify-content: space-between;
 
 }
+
+@media screen and (min-width:962px){
 .home_{
     padding:20px;
     font-size:14pt;
@@ -45,4 +55,109 @@
     width:53pt;
     padding:2px;
     align-self: flex-end;
+}
+
+}
+
+@media screen and (max-width:961px){
+    .home_{
+        padding:20px;
+        font-size:4pt;
+    }
+    .account_{
+        
+        font-size:4pt;
+    
+    }
+    .home_ ,.account_{
+        color:rgb(34, 136, 139);
+        padding:3px;
+    
+    }
+    .opt_span{
+        font-size:10pt;
+        padding:8px;
+        margin:10px;
+    }
+    .userPhoto{
+        height:35pt;
+        width:49pt;
+        padding:2px;
+        align-self: flex-end;
+    }
+    
+}
+
+
+.sidePanel1{ 
+    position:sticky;
+    width:0%;
+    z-index: 2;
+    height: 100%;
+    background-color:#111;
+    overflow-x:hidden;
+    padding-top:20px;  
+    animation: sideBar 1s ease-in-out forwards;
+}
+
+@keyframes sideBar{
+    from{
+        width:0%;
+    }
+    to{
+        width:100%;
+    }
+}
+.sidePanel1 a{
+    display: block;
+    padding:8px 8px 8px 32px; /*Top bottom right left*/
+    text-decoration: none;
+    font-size:12pt;
+    margin:3px;
+    color:#818181;
+    padding:4px;
+     transition:0.3;
+}
+.sidePanel1:hover{
+    background-color:#3a3737;
+    color:white;
+}
+.sidePanel1 a:hover{
+    background-color:rgb(55, 122, 55);
+    color:white;
+}
+.sidePanel1 .closeBtn{
+    position:absolute;
+    top:0;
+    left:7pt;
+    font-size:13pt;
+}
+.openBtn{
+    margin:10px;
+    font-size:13pt;
+    cursor:pointer;
+    background-color: rgb(15, 15, 15);
+    color: rgb(250, 248, 248);
+    padding:5px 6px;
+    border:none;
+    z-index:1; 
+}
+
+.openBtn:hover{
+    background-color:rgb(65, 59, 59);
+  
+}
+
+@media screen and (max-width:345px){
+    .openBtn{
+        font-size:12x; 
+    }
+}
+.closeBtn{
+    position:sticky;
+    background-color:rgb(131, 58, 58);
+    color:white;
+}
+.closeBtn:hover{
+    background-color: rgb(241, 11, 11);
 }

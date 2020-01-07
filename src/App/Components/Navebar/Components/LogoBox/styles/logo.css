@@ -23,9 +23,9 @@
     align-self: flex-start;
 }
 
-@media screen and (max-width: 956px){
+@media screen and (max-width: 961px){
     .logoName{
-        font-size: 25pt;
+        font-size: 33pt;
         padding-left:20px;
         color:rgb(9, 90, 59);
     }
@@ -43,9 +43,16 @@
 
 @media screen and (max-width: 609px){
     .logoName{
-        font-size: 20pt;
+        font-size: 25pt;
+        margin-top:10px;
         padding-left:20px;
         color:rgb(9, 90, 59);
     }
 
+}
+@media screen and (max-width:345px){
+    .logoName{
+        font-size:19pt; 
+        padding-left:14px;
+    }
 }
