@@ -8,7 +8,26 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 
 
-const ListView = () => {
+export const TrendingPosts =({closeSideBar})=>{
+
+	var data=["Item-1","item-2","Item-3"];
+	return (
+		<React.Fragment>
+		  <div   className="sidePanel1">
+				<a href="javascript:void(0)" className="closeBtn" onClick={closeSideBar}>
+					×
+				</a>
+				<br />
+			  <a href="#" className="title btn">Trending Post</a>
+			
+
+			  {data.map((e,i)=>(<a href="#">{e}</a>))}
+			</div>
+		</React.Fragment>
+	);
+};
+
+const ListView = ({openSideBar}) => {
 	var btn=null;
 	var sideBar =null;
 	 const [state, setState]= useState({show:null});
@@ -35,11 +54,12 @@ const ListView = () => {
 				<a href="#">Account</a>
 				<a href="#">Home</a>
 				<a href="#">Create Post</a>
-				<a href="#">Trending</a>
+				<a href="#" onClick={openSideBar}>Trending</a>
 			</div>}
-	{(!state.show)&&<button ref={r=>btn=r} className="openBtn" onClick={openBtn}>
+	{(!state.show)&&(!state.sideBarShow)&&<button ref={r=>btn=r} className="openBtn" onClick={openBtn}>
 				☰Options
 			</button>}
+
 		</React.Fragment>
 	);
 };

@@ -96,8 +96,10 @@
     height: 100%;
     background-color:#111;
     overflow-x:hidden;
+    overflow-y: scroll;
+    transition:1.2s; 
     padding-top:20px;  
-    animation: sideBar 1s ease-in-out forwards;
+    animation: sideBar 1.4s ease-in-out forwards;
 }
 
 @keyframes sideBar{
@@ -157,7 +159,16 @@
     position:sticky;
     background-color:rgb(131, 58, 58);
     color:white;
+    animation:close 1.2 ease-in-out forward
 }
+
 .closeBtn:hover{
     background-color: rgb(241, 11, 11);
+}
+
+
+[class~="title"]{
+    background-color: rgb(1, 83, 29);
+    color: white;
+    font-weight: bold;
 }
