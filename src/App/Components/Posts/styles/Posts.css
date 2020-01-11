@@ -1,34 +1,165 @@
+[class~="postComponent"]{
+    display:flex;
+    flex-direction: row;
+    margin-left:100px;
+    margin-right:100px;
+    margin-top:20px;
+    margin-bottom:20px;
+    background-color: rgb(43, 182, 136);
+}
 
-.post__{
-    display:grid;
-    color:black;
-    padding:10px;
-    width:90%;
-    height:25%;
-    align-self: center;
-    background-color: rgb(118, 120, 126);
+.postImage img{
+    width:12vw;
+    height:12vw;
+}
+.postBody{
+    display:flex;
+    width:100%;
+    flex-direction: column;
+    background-color:slateblue;
 }
 
 .postTitle{
-    grid-column: 1/5;
+    font-size:3vw;
+    height:90%;
     overflow-x: hidden;
-    font-size:1.9em;
+    background-color: rgb(245, 245, 245);
 }
 
-.authorPic{
-    grid-column: 1/2;
-    padding:3px;
-
+.userInfo{
+    display: flex;
+    background-color: rgb(216, 209, 226);
+    width:100%;
 }
 
-
-.lastUpdate{
-  grid-column:3/4;
+.likesComments{
+    flex-wrap: nowrap;
+    flex-grow: 2;
+    background-color: rgb(238, 235, 235);
 }
 
 .authorImage{
-    width:50px;
-    height:50px;
-    margin-right:5px;
+    align-self: flex-start;
+    width:3vw;
+    height:3vw;
     border-radius: 50%;
+}
+
+.authorName{
+    flex-wrap: nowrap;
+    margin-left:0.5vw;
+    position: relative;
+    top: 1vw;
+    font-size:1vw;
+}
+
+ .comments{
+    margin-left:2vw;
+}
+span.numComments{
+    margin:3px;
+    font-size:1.5vw;
+}
+span.numLikes{
+    margin:3px;
+    font-size: 1.5vw;
+}
+span.likes span.comments{
+    font-size: 1.5vw;
+}
+@media screen and (max-width:301px){
+    .postImage img{
+        width: 90vw;
+        height:90vw;
+    }
+    [class~="postComponent"]{
+        flex-direction: column;
+        width: 90vw;
+        font-size:5vw;
+        
+    }
+    .postBody{
+        width:90vw;
+        align-self: center;
+
+    }
+    .authorName{
+        font-size: 2vw;
+    }
+}
+
+
+@media screen and (max-width:962px){
+    .postImage img{
+        width: 40vw;
+        height:40vw;
+    }
+    [class~="postComponent"]{
+        width:40vw;
+        flex-direction: column;
+    }
+    .postBody{
+        width:40vw;
+        align-self: center;
+    }
+    .authorName{
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width:399px){
+    .postImage img{
+        width: 100vw;
+        height:80vw;
+    }
+    [class~="postComponent"]{
+        width:100vw;
+        flex-direction: column;
+    }
+    .postTitle{
+        font-size: 5vw;
+    }
+    .postBody{
+        width:100vw;
+        align-self: center;
+    }
+    .authorName{
+        font-size: 4vw;
+    }
+
+    span.likes{
+        font-size:2pt;
+    }
+    span.comments{
+        font-size:2pt;
+    }
+}
+
+
+@media screen and (max-width:665px){
+    .postImage img{
+        width: 90vw;
+        height:50vw;
+    }
+    [class~="postComponent"]{
+        width:90vw;
+        flex-direction: column;
+    }
+    .postTitle{
+        font-size: 5vw;
+    }
+    .postBody{
+        width:90vw;
+        align-self: center;
+    }
+    .authorName{
+        font-size: 4vw;
+    }
+
+    span.likes{
+        font-size:2pt;
+    }
+    span.comments{
+        font-size:2pt;
+    }
 }
