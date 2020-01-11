@@ -59,7 +59,7 @@ const List = ({ openSideBar }) => {
 	return (
 		<React.Fragment>
 			{state.show && (
-				<div className="sidePanel1">
+				<div className="sidePanel1 mobileView">
 					<a href="javascript:void(0)" className="closeBtn" onClick={closeNav}>
 						×
 					</a>

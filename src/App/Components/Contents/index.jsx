@@ -4,10 +4,12 @@ import * as React_Redux from 'react-redux';
 
 import { Trending } from '../Navebar/Components/Options';
 
+import {Post} from '../Posts';
+
 const MainContent = () => {
 	return (
 		<React.Fragment>
-			<div className="mainContent">"Main Content"</div>
+			<div className="mainContent"><Post/></div>
 		</React.Fragment>
 	);
 };

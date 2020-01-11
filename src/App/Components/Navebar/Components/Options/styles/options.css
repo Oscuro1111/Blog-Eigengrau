@@ -116,8 +116,11 @@
     text-decoration: none;
     font-size:12pt;
     margin:3px;
-    color:#818181;
+    color:#fdfdfd;
     padding:4px;
+    border:solid #111;
+    border-bottom-color: hsl(120, 100%, 100%);
+    border-width:0.5px; 
      transition:0.3;
 }
 .sidePanel1:hover{
@@ -167,8 +170,13 @@
 }
 
 
-[class~="title"]{
-    background-color: rgb(1, 83, 29);
-    color: white;
-    font-weight: bold;
+
+
+@media screen and (max-width:290px){
+    [class~="mobileView"] a{
+        font-size:8pt;
+    }
+    .openBtn{
+        font-size:8pt;
+    }
 }
