@@ -1,6 +1,6 @@
 [class~="postComponent"]{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-left:100px;
     margin-right:100px;
     margin-top:20px;
@@ -8,9 +8,18 @@
     background-color: rgb(43, 182, 136);
 }
 
-.postImage img{
-    width:12vw;
-    height:12vw;
+.postCategory{
+    width:100%;
+    display: flexbox;
+    font-size:2vw;
+    background-color: rgb(30, 103, 212);
+    color: white;
+}
+.postTopic{
+    padding:1.2vw;
+    font-weight:bolder;
+    font-size: 1.5vw;
+    float: left;
 }
 .postBody{
     display:flex;
@@ -20,9 +29,12 @@
 }
 
 .postTitle{
-    font-size:3vw;
+    padding:2vw;
+    font-size:1.4rem;
     height:90%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     overflow-x: hidden;
+    color:blueviolet;
     background-color: rgb(245, 245, 245);
 }
 
@@ -50,6 +62,7 @@
     margin-left:0.5vw;
     position: relative;
     top: 1vw;
+    font-weight: bolder;
     font-size:1vw;
 }
 
@@ -67,99 +80,84 @@ span.numLikes{
 span.likes span.comments{
     font-size: 1.5vw;
 }
-@media screen and (max-width:301px){
-    .postImage img{
-        width: 90vw;
-        height:90vw;
-    }
+
+
+
+@media screen and (max-width:666px){
     [class~="postComponent"]{
-        flex-direction: column;
-        width: 90vw;
-        font-size:5vw;
-        
-    }
-    .postBody{
-        width:90vw;
-        align-self: center;
-
-    }
-    .authorName{
-        font-size: 2vw;
-    }
-}
-
-
-@media screen and (max-width:962px){
-    .postImage img{
-        width: 40vw;
-        height:40vw;
-    }
-    [class~="postComponent"]{
-        width:40vw;
-        flex-direction: column;
-    }
-    .postBody{
-        width:40vw;
-        align-self: center;
-    }
-    .authorName{
-        font-size: 2vw;
-    }
-}
-
-@media screen and (max-width:399px){
-    .postImage img{
-        width: 100vw;
-        height:80vw;
-    }
-    [class~="postComponent"]{
+        margin-top: 3vw;
+        margin-right:1vw;
+        margin-left:1vw;
         width:100vw;
         flex-direction: column;
     }
     .postTitle{
-        font-size: 5vw;
+        font-size: 3vw;
     }
     .postBody{
         width:100vw;
         align-self: center;
     }
     .authorName{
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
-    span.likes{
-        font-size:2pt;
+    span.likes span{
+        font-size:3vw;
     }
-    span.comments{
-        font-size:2pt;
+    span.comments span{
+        font-size:3vw;
+    }
+
+    .postTopic{
+        padding:1vw;
+        font-weight:bolder;
+        font-size: 3.3vw;
+        float: left;
+    }
+    .authorImage{
+        height: 4vw;
+        width:4vw;
     }
 }
 
 
-@media screen and (max-width:665px){
-    .postImage img{
-        width: 90vw;
-        height:50vw;
-    }
+
+@media screen and (max-width:500px){
     [class~="postComponent"]{
-        width:90vw;
+        margin-top: 3vw;
+        margin-right:1vw;
+        margin-left:1vw;
+        width:100vw;
         flex-direction: column;
     }
     .postTitle{
-        font-size: 5vw;
+        font-size: 4vw;
     }
     .postBody{
-        width:90vw;
+        width:100vw;
         align-self: center;
     }
     .authorName{
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
-    span.likes{
-        font-size:2pt;
+    span.likes span{
+        font-size:3vw;
     }
-    span.comments{
-        font-size:2pt;
+    span.comments span{
+        font-size:3vw;
+    }
+
+    .postTopic{
+        font-weight:bolder;
+        font-size: 3vw;
+        float: left;
+    }
+
+    .authorImage{
+        height: 6vw;
+        width:6vw;
     }
 }
+
