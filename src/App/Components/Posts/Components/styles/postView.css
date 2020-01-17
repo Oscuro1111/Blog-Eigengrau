@@ -115,9 +115,5 @@
         width:80vw;
     }
 }
-.commentList{
-    display:flex;
-    flex-direction:column;
-    background-color:slategrey;
-}
+
 
