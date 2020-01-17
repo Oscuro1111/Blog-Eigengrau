@@ -3,6 +3,9 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import './styles/Posts.css';
 import postPic from './resources/js.png';
 
+
+import {PostViewComponent} from './Components/postViewComponent';
+
 const PostHead=()=>{
 
   return (
@@ -40,16 +43,20 @@ const PostBody=()=>{
             </div>
           </div>
   );
-};
+}; 
 
 
+var test =false;
 
 export const Post =()=>{
 
     return (
-        <div className="postComponent">
+      <React.Fragment>
+      { test && <div className="postComponent">
             <PostHead />
             <PostBody />
-        </div>          
+        </div>} 
+        {!test&&<PostViewComponent />}
+        </React.Fragment>         
     );
 }

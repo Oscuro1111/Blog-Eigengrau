@@ -1,0 +1,123 @@
+.postView{
+    display:flex;
+    height:100%;
+    width:100%;
+    flex-direction: column;
+    background-color: rgb(39, 213, 232);
+}
+
+
+.authorImg{
+    width:1.4rem;
+    height: 1.4rem;
+    border-radius:50%;
+}
+.postHeader{
+    background-color: #fcf9ff;
+    padding:10px;
+    width:100%;
+}
+
+.view_postTitle{
+    color: blueviolet;
+    padding:2px;
+    font-size: 1.6rem;
+}
+.headerBody{
+    width: 100%;
+    display: flexbox;
+     flex-direction: row;
+}
+.view_postAuthor , .view_lastUpdatedDate{
+    font-size:1.1rem;
+}
+.view_postAuthor{
+    float: left;
+}
+.view_lastUpdatedDate{
+   float: right;
+}
+
+@media screen and (max-width:400px){
+    .view_postTitle{
+        font-size:7vw
+    }
+    .view_postAuthor{
+        font-size:4vw;
+    }
+    .view_lastUpdatedDate{
+        font-size:4vw;
+    }
+    .authorImg{
+        height: 6vw;
+        width:6vw;
+    }
+    .postBody{
+        width:100vw;
+    }
+}
+
+/*Post Body*/
+
+.postBody{
+    min-height: 45vw;
+    font-size:0.8rem;
+    background-color:rgba(21, 45, 180, 0.404);
+}
+
+/*  comment component styles */
+
+.postComment{
+    display: flexbox;
+    text-align: left;
+    width:100%;
+    background-color: rgb(88, 99, 99);
+}
+
+.commentHeading{
+    color:white;
+    font-size: 1.4rem;
+    padding:3px;
+    float: left;
+}
+.inputComment textarea{
+    width:40vw;
+    margin-left:1.4vw;
+    margin-top:1.3vw;
+    margin-right:1.4vw;
+}
+.inputComment input{
+    padding-left:1vw;
+    padding-right:1vw;
+}
+
+.inputComment .btn-primary{
+    padding-left:1vw;
+    padding-right:1vw;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30%;
+    padding-top: 0.6vw;
+    padding-bottom: 0.6vw;
+    width:9vw;
+    margin:1vw;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.inputComment form{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width:556px){
+    .inputComment .btn-primary{
+        width:5.4rem;
+    }
+    .inputComment textarea{
+        width:80vw;
+    }
+}
+.commentList{
+    display:flex;
+    flex-direction:column;
+    background-color:slategrey;
+}
+
