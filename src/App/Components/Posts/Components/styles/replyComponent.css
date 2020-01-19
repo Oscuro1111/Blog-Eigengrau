@@ -1,0 +1,41 @@
+.replyList {
+    display: grid;
+    width:0px;
+    max-height:60%;
+    overflow-y: scroll;
+    background-color:rgb(126, 122, 122);
+    animation: smooth 1.2s ease-in-out forwards;
+}
+@keyframes smooth{
+    from{
+        width:0px;
+    }
+    to{
+        width:100%;
+    }
+}
+
+.replyComponent {
+	grid-column: 2/5;
+	display: flex;
+	background-color: aquamarine;
+	flex-direction: column;
+}
+
+[class~='font-size-0-dot-9-rem'] {
+    font-size: 0.9rem;
+    text-align: left;
+}
+[class~='font-size-0-dot-8-rem'] {
+	font-size: 0.8rem;
+}
+[class~='font-size-1-rem'] {
+	font-size: 1rem;
+}
+[class~='font-size-1-dot-1-rem'] {
+	font-size: 1.1rem;
+}
+
+[class~='padding-0-px'] {
+    padding:0;
+}

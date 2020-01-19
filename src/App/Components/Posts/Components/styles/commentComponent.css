@@ -1,79 +1,115 @@
-
-
-.commentList{
-    display:flex;
-    flex-direction:column;
-    width:40vw;
-    background-color: rgb(110, 110, 110);
-    padding:0.5rem;
-    margin:0.5rem;
+.commentList {
+	display: flex;
+	flex-direction: column;
+	width: 40vw;
+	background-color: rgb(126, 122, 122);
+	padding: 0.5rem;
+	margin: 0.5rem;
 }
 
-.commentComponent{
-    display:flex;
-    flex-direction:column;
-    background-color:rgb(236, 228, 228);
-
+.commentComponent {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
 }
 
-.commentHeader{
-    display:flexbox;
-    background-color: rgb(151, 146, 146);
-    color:white;
-    font-weight: bolder;
-    padding:1vw;
+.commentHeader {
+	display: flexbox;
+	background-color: rgb(151, 146, 146);
+	color: white;
+	font-weight: bolder;
+	padding: 1vw;
 }
 
-.commentHeader .c_userInfo{
-    float:left;
+.commentHeader .c_userInfo {
+	float: left;
 }
 
-.commentHeader .c_date{
-    float:right;
+.commentHeader .c_date {
+	float: right;
 }
 
-.c_body p{
-    font-size: 1rem;
-    font-weight: bold;
-    font-family: fantasy;
-    text-align: left;
-    color:rgb(2, 2, 2);
-    padding:0.3vw;
+.c_body p {
+	font-size: 1rem;
+	font-weight: bold;
+	font-family: fantasy;
+	text-align: left;
+	color: rgb(2, 2, 2);
+	padding: 0.3vw;
 }
 
-.c_footer{
-    display:flexbox;
+.c_footer {
+	display: flexbox;
 }
-.c_footer span{
-    float:left;
-    margin:0.3rem;
-}
-
-.c_authorImg{
-    width:1.8rem;
-    height: 1.8rem;
-    border-radius:50%;
+.c_footer span {
+	float: left;
+	margin: 0.3rem;
 }
 
-@media screen and (max-width:838px){
-    .commentList{
-        width:90vw;
-    }
+.c_authorImg {
+	width: 1.8rem;
+	height: 1.8rem;
+	border-radius: 50%;
 }
 
-@media screen and (max-width:386px){
-    .commentHeader{
-        font-size:4.1vw; /*27.52px*/
-    }
-    .c_date{
-        margin-top: 0.3rem;
-    }
-    .c_body p{
-        font-size:5.9vw;
-}
-.commentList{
-    margin: 0;
-    width:100vw;
+@media screen and (max-width: 838px) {
+	.commentList {
+		width: 90vw;
+	}
 }
 
+@media screen and (max-width: 386px) {
+	.commentHeader {
+		font-size: 4.1vw; /*27.52px*/
+	}
+	.c_date {
+		margin-top: 0.3rem;
+	}
+	.c_body p {
+		font-size: 5.9vw;
+	}
+	.commentList {
+		margin: 0;
+		width: 100vw;
+	}
+}
+
+.c_comments:hover {
+	background-color: rgb(167, 163, 163);
+	cursor: pointer;
+	padding: 1px;
+}
+
+.c_footer .c_replyBtn {
+	font-weight: bolder;
+	float: right;
+	font-size: 1.2rem;
+	margin: 0.3rem;
+	color: rgb(32, 129, 173);
+	padding: 0.1rem;
+}
+.c_replyBtn:hover {
+	color: rgb(247, 248, 248);
+	cursor: pointer;
+	padding: 2px;
+	background-color: rgb(167, 163, 163);
+}
+
+span.toolTipText {
+	position: absolute;
+	visibility: hidden;
+	font-size: 1rem;
+	z-index: 1;
+	color: white;
+	font-weight: bolder;
+	bottom: 11vh;
+	padding: 0.5rem;
+	background-color: rgb(39, 41, 39);
+}
+span.c_reply {
+	float: right;
+}
+.c_reply:hover .toolTipText {
+	visibility: visible;
+	cursor: pointer;
 }
