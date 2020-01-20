@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 
 import './styles/replyComponent.css';
 
@@ -25,11 +25,7 @@ const ReplyBody = () => {
 
 //*******************************ReplyComponent************************************************* */
 const ReplyFooter = () => {
-	const [state, setState] = useState({ showReply: false });
 
-	const onClick = e => {
-		setState({ showReply: !state.showReply });
-	};
 
 	return (
 		<React.Fragment>

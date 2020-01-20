@@ -4,6 +4,7 @@ import './styles/postView.css';
 import './styles/commentComponent.css';
 import pic from '../resources/js.png';
 import {ReplyList} from './replyComponent'; 
+import {ReplyInput} from './ReplyInput/replyInput';
 
 const PostHeader = () => {
 	return (
@@ -57,12 +58,15 @@ const CommentBody = () => {
 
 //*******************************ReplyComponent************************************************* */
 const CommentFooter = () => {
-	const [state, setState] = useState({ showReply: false });
+	const [state, setState] = useState({ showReply: false,replyInputShow:false });
 
 	const onClick = e => {
 		setState({ showReply: !state.showReply });
 	};
 
+	const onReply=e=>{
+		setState({replyInputShow:!state.replyInputShow});
+	};
 	return (
 		<React.Fragment>
 			<div className="c_footer">
@@ -74,12 +78,13 @@ const CommentFooter = () => {
 					<span className="badge badge-secondary">0</span>
 					<span className="far fa-comment" ></span>
 				</span>
-				<span className="c_reply">
+				<span className="c_reply" onClick={onReply}>
 					<span className="c_replyBtn far fa-reply"></span>
 					<span className="toolTipText">Reply</span>
 				</span>
 			</div>
 			{state.showReply && <ReplyList />}
+			{state.replyInputShow&&<ReplyInput />}
 		</React.Fragment>
 	);
 };
