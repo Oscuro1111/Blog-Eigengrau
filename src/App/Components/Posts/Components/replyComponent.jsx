@@ -1,9 +1,9 @@
-import React from 'react';
+import React ,{useState}from 'react';
 
 import './styles/replyComponent.css';
 
 import pic from '../resources/js.png';
-
+import {ReplyInput} from './ReplyInput/replyInput';
 const ReplyHeader = () => {
 	return (
 		<div className="commentHeader padding-0-px">
@@ -26,6 +26,10 @@ const ReplyBody = () => {
 //*******************************ReplyComponent************************************************* */
 const ReplyFooter = () => {
 
+	const [state, setState]=useState({showInputReply:false});
+	const onClick=e=>{
+		setState({showInputReply:!state.showInputReply});
+	};
 
 	return (
 		<React.Fragment>
@@ -35,11 +39,12 @@ const ReplyFooter = () => {
 					<span className="fas fa-thumbs-up"></span>
 				</span>
 				
-				<span className="c_reply">
+				<span className="c_reply" onClick={onClick}>
 					<span className="c_replyBtn far fa-reply"></span>
 					<span className="toolTipText">Reply</span>
 				</span>
 			</div>
+		  {state.showInputReply&&<ReplyInput r_reply={{toWhom:"Oscuro Smith"}}/>}
 		</React.Fragment>
 	);
 };
