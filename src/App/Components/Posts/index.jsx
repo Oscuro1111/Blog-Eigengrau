@@ -2,9 +2,9 @@ import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.css';
 import './styles/Posts.css';
 import postPic from './resources/js.png';
+import {CreatePost} from './Components/createPost';
 
-
-import {PostViewComponent} from './Components/postViewComponent';
+//import {PostViewComponent} from './Components/postViewComponent';
 
 const PostHead=()=>{
 
@@ -56,7 +56,7 @@ export const Post =()=>{
             <PostHead />
             <PostBody />
         </div>} 
-        {!test&&<PostViewComponent />}
+        {!test&&<CreatePost />}
         </React.Fragment>         
     );
 }
