@@ -1,6 +1,7 @@
 .createPost{
     display:flex;
+    flex-direction: column;
     background-color:rgb(189, 170, 170);
-    width:100%;
+    width:70vw;
     height:100%;
 }

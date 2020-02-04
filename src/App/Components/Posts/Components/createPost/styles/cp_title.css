@@ -1,0 +1,6 @@
+.createPost_title{
+    display:flex;
+    flex-direction:row;
+    width: 100%;
+    background-color:rgb(247, 238, 238);
+}

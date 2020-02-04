@@ -1,0 +1,25 @@
+.cp_titleInputPost{
+    display:flex;
+    background-color:rgb(10, 19, 20);
+    color:rgb(255, 255, 255);
+    flex-direction: column;
+    width:70vw;
+}
+.cp_titleHeading{
+    background-color: rgb(7, 7, 6);
+    color:rgb(231, 231, 231);
+    font-size:2rem;
+    text-align: left;
+    max-height:5vh;
+    min-height:5vh;
+}
+.cp_titleContent{
+    background-color:white;
+    color: black;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    padding:1vw;
+    font-size:1.6rem;
+    width:100%;
+    height:100%;
+}

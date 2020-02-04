@@ -1,0 +1,31 @@
+.editor_Box{
+    background-color:rgb(255, 255, 255);
+    min-height:55vh;
+    max-height:55vh;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    text-align: left;
+}
+
+.createPost_editor{
+    margin-top:10vh;
+    background-color:black;
+}
+.cp_postBody{
+    text-align: left;
+    background-color: black;
+    color:#fff;
+    font-size: 1.9rem;
+}
+
+
+.createPost_submitPost{
+    display: flexbox;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.createPost_submitPost button{
+    float: right;
+    margin: 1rem;
+}
