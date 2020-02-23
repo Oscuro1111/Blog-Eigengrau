@@ -1,3 +1,15 @@
 .cp_toolBar{
-    
+    background-color:rgb(224, 233, 230);
+}
+
+.editTools{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 1rem;
+    overflow-y: scroll;
+}
+.toolForm{
+    display: flex;
+    flex-direction: column;
 }
